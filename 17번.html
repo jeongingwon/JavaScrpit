@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      x = true;
+      y = false;
+
+      var ink1 = x && y;
+      var ink2 = x || y;
+      var ink3 = !x;
+      var ink4 = 3 > 2 && 3 < 4;
+      var ink5 = 3 == -2 || -1 < 0;
+
+      document.write("<p>x:true, y=false </p>");
+      document.write("<p>x && y: " + ink1 + "</p>");
+      document.write("<p>x || y: " + ink2 + "</p>");
+      document.write("<p>x !x: " + ink3 + "</p>");
+      document.write("<p>(3>2)&& (3<4): " + ink4 + "</p>");
+      document.write("<p>(3==-2) || (-1 <0): " + ink5 + "</p>");
+    </script>
+  </body>
+</html>
