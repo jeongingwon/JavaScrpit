@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            var 과일 = [
+              "딸기",
+              "사과",
+              "바나나",
+              "포도",
+              "수박",
+              "참외",
+              "키위",
+              "망고",
+              "체리",
+            ];
+            console.log(과일[0]);
+            과일[0] = "스트로베리";
+            console.log(과일[0]);
+      */
+      /*
+      var 과일과숫자 = [3, "과일", ["딸기", "사과", 3627.5], 10];
+      console.log(과일과숫자[1]);
+
+      var 우유 = ["딸기", "바나나", "초코"];
+
+      for (let i = 0; i < 우유.length; i++) {
+        document.write(우유[i]);
+      }
+  */
+      /*
+      var 동물 = [];
+      동물.push("고양이");
+      동물.push("강아지");
+      동물.push("판다");
+      console.log(동물);
+      console.log(동물[0]);
+      동물.unshift("원숭이이성원");
+      동물.unshift("북금공");
+      동물.pop();
+      console.log(동물);
+
+      var 첫번째동물 = 동물.shift();
+      console.log(첫번째동물);
+*/
+      var 포유류 = ["알파카", "원숭이", "설인"];
+      var 파충류 = ["보아뱀", "고질라"];
+      var 조류 = ["앵무새", "도도새"];
+
+      var 모든동물 = 포유류.concat(파충류, 조류);
+      document.write(모든동물);
+    </script>
+  </body>
+</html>

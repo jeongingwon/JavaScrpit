@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var input = prompt("숫자를 입력하세요", 100);
+      input = parseInt(input);
+
+      if (input > 0) {
+        //0보다 크다
+        if (input % 2 == 0) {
+          document.write("0보다 큰 짝수");
+        } else {
+          // 나머지가 1인경우 = 홀수
+          document.write("0보다 큰 홀수");
+        }
+      } else {
+        document.write("0보다 작거나 같은수");
+      }
+    </script>
+  </body>
+</html>

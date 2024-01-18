@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+                        for (var i = 1; i <= 5; i++) {
+                          for (var j = 0; j < i; j++) {
+                            document.write("*");
+                          }
+                          document.write("<Br>");
+                        }*/
+      /*
+                        for (let i = 1; i <= 9; i++) {
+                          for (let j = 1; j <= 9; j++) {
+                            document.write(i + "X" + j + "=" + i * j + "<br>");
+                          }
+                          document.write("<br>");
+                        }*/
+
+      let password = "";
+      do {
+        password = prompt("암호를 대라");
+
+        if (password == "you") {
+          break;
+        }
+      } while (true);
+
+      document.write("통과!");
+
+      /*
+                 let answer = Math.floor(Math.random() * 101);
+                 while (true) {
+                   const input = prompt("1에서 100 사이의 숫자를 맞춰보세요:");
+
+                   if (input === null) {
+                     // 사용자가 취소 버튼을 누르면 종료
+                     alert("게임이 종료되었습니다.");
+                     break;
+                   }
+
+                   const guess = parseInt(input);
+
+                   if (guess === answer) {
+                     alert("정답입니다!");
+                     break;
+                   } else if (guess < answer) {
+                     alert("업");
+                   } else {
+                     alert("다운");
+                   }
+
+                   count++;
+                 }
+                 */
+    </script>
+  </body>
+</html>

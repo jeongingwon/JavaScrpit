@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var Temp;
+      var sta = prompt("물의 온도를 입력하세요", 100);
+      sta = parseInt(sta);
+
+      if (sta >= 100) {
+        document.write("기체상태 : 온도가 100도보다 크거나 같습니다");
+      } else if (100 > sta > 0) {
+        document.write("액체상태 : 온도가 0도 초과 100도 미만입니다.");
+      } else {
+        0 > sta;
+        document.write("고체상태 : 온도가 0도 미만입니다.");
+      }
+    </script>
+  </body>
+</html>

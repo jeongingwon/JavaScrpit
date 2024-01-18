@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      /*   문제 1
+            let str = prompt("수식 입력");
+            //입력된 문자열이 없는경우
+            if (str == "") {
+              document.write("입력된 식이 없습니다.");
+            }
+            //입력된 문자열이 있는경우
+            else {
+              var res = eval(str);
+              document.write(str + " " + res);
+            }*/
+
+      /*  문제 2
+          var price_tshirt = 10000;
+          var price_sweater = 30000;
+          var total_price = 0;
+
+          num_tshirt = parseInt(prompt("티셔츠 개수 입력"));
+          num_sweather = parseInt(prompt("스웨터 개수입력"));
+
+          total_price = price_sweater * num_sweather + price_tshirt * num_tshirt;
+
+          if (total_price <= 100000) {
+            total_price = total_price * 0.95;
+          } else total_price > 100000;
+          total_price = total_price * 0.85;
+          document.write("티셔츠 개수" + num_tshirt + "<br>");
+          document.write("스웨터 개수:" + num_sweather + "<br>");
+          document.write("합계 :" + total_price);*/
+
+      /* 문제 3
+          let password = prompt("비밀번호를 입력하세요");
+          let answer = "";
+
+          if (password.length >= 9) {
+            answer = "Good";
+          } else if (password.length >= 5) {
+            answer = "Normal";
+          } else {
+            answer = "Bad";
+          }
+
+          document.write("당신의 비밀번호:" + password + "<br>");
+          document.write("비밀번호의 안전성은 " + answer + "입니다.");
+        */
+
+      let num1 = parseInt(prompt("첫 번째 정수를 입력하세요:"));
+      let num2 = parseInt(prompt("두 번째 정수를 입력하세요:"));
+
+      // 큰 수 찾기
+      let largerNumber;
+
+      if (num1 > num2) {
+        largerNumber = num1;
+      } else {
+        num2 > num1;
+        largerNumber = num2;
+      }
+
+      // 큰 수 출력
+      document.write("첫 번째 입력한숫자:" + num1 + "<br>");
+      document.write("두 번째 입력한숫자:" + num2 + "<br>");
+
+      // 짝수인지 홀수인지 판별
+      if (largerNumber % 2 === 0) {
+        document.write(largerNumber + "이 큰수이고, 짝수이다");
+      } else {
+        document.write(largerNumber + "이 큰수이고 홀수입니다.");
+      }
+    </script>
+  </body>
+</html>
