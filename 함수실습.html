@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   1번
+        function big(a, b) {
+          if (a > b) return a;
+          else return b;
+        }
+        const b = big("625", "555");
+        document.write("큰수= " + b);
+      */
+      /*     2번
+        function pr(str, n) {
+          for (let i = 0; i < n; i++) {
+            document.write(str);
+          }
+        }
+        */
+      /*     3번
+        const n = parseInt(prompt("정수를 입력하세요"));
+        evenOrOdd(n);
+
+        function evenOrOdd(number) {
+          const result = number % 2 ? "홀수" : "짝수";
+
+          document.write("<h1>입력한 값: " + number + "</h1>");
+          document.write("<h1>" + result + "</h1>");
+        }
+        */
+      /*   4번
+        function randomInt() {
+          return Math.floor(Math.random() * 9) + 1;
+        }
+
+        const ques = randomInt() + "*" + randomInt();
+
+        const user = prompt(ques + "값은 얼마입니까?", 0);
+
+        if (user == null) {
+          document.write("구구단 연습을 종료합니다.");
+        } else {
+          const ans = eval(ques);
+
+          if (ans == user) document.write("정답!");
+          else document.write("아니오");
+
+          document.write(ques + "=" + "<b>" + ans + "</b>입니다<b>");
+        }
+        */
+      /*    5번
+      const names = ["Ian", "David", "Darren", "peter"];
+      document.write("<h3>이름출력" + "<hr>");
+      function printName() {
+        for (let i = 0; i < names.length; i++) {
+          document.write(names[i]);
+        }
+      }
+
+      function printLongName() {
+        let longestName = "";
+
+        for (let i = 0; i < names.length; i++) {
+          if (names[i].length > longestName.length) {
+            longestName = names[i];
+          }
+        }
+
+        document.write("<br>" + "길이가 가장 긴이름 " + "<hr>" + longestName);
+      }
+
+      printName();
+
+      printLongName();
+
+      */
+    </script>
+  </body>
+</html>

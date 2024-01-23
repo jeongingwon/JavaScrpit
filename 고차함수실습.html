@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*     1번
+      const numbers = [5, 10, 15, 20, 25, 30];
+
+      numbers.forEach((item, index) => {
+        if (item % 2 == 0) {
+          console.log(item);
+          numbers.splice(index, 1);
+        }
+      });
+
+      document.write("배열의 남은 요소: " + numbers);
+    */
+
+      /*     2번
+      const fruits = [
+        { name: "apple", quantity: 2, price: 1000 },
+        { name: "banana", quantity: 3, price: 2500 },
+        { name: "orange", quantity: 5, price: 5000 },
+      ];
+
+      function findFruit(fruitName) {
+        const foundFruit = fruits.find(
+          (fruit) => fruit.name.toLowerCase() === fruitName.toLowerCase()
+        );
+
+        if (foundFruit) {
+          console.log(
+            `과일 이름: ${foundFruit.name}, 수량: ${foundFruit.quantity}, 가격: ${foundFruit.price}`
+          );
+        } else {
+          console.log(`${fruitName}을(를) 찾을 수 없습니다.`);
+        }
+      }
+
+      findFruit("apple");
+      findFruit("Banana");
+      findFruit("grape");
+      */
+      const array = ["javascript", "css", "react", "html"];
+
+      // 글자수가 5자 이상인 아이템 검색 및 출력
+      function findLongItems() {
+        const longItem = array.find((item) => item.length >= 5);
+
+        if (longItem) {
+          const resultContainer = document.getElementById("result-container");
+          resultContainer.innerHTML = `<p>검색된 아이템: ${longItem}, 글자수: ${longItem.length}</p>`;
+        } else {
+          alert("5자 이상인 아이템을 찾을 수 없습니다.");
+        }
+      }
+
+      // 함수 호출
+      findLongItems();
+    </script>
+  </body>
+</html>

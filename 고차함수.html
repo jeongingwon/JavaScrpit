@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fruits = ["apple", "banana", "melon", "orange", "melon"];
+      // function
+      const favorite1 = fruits.find(function (name) {
+        return name === "melon";
+      });
+      console.log(favorite1);
+
+      index1 = fruits.findIndex(function (name) {
+        return name === "melon";
+      });
+      console.log(index1);
+      const some1 = fruits.some(function (name) {
+        return name === "melon";
+      });
+      console.log(some1);
+      const every1 = fruits.every(function (name) {
+        return name === "melon";
+      });
+      console.log(every1);
+
+      const filter2 = fruits.filter((name) => name === "melon");
+      console.log(filter2);
+    </script>
+  </body>
+</html>
