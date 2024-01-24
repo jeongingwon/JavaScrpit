@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function add(a, b, c) {
+        return a + b + c;
+      }
+      const nums = [10, 20, 30];
+      const result = add(nums[0], nums[1], nums[2]);
+      console.log(result);
+      */
+      /*
+      function add(a, b, c) {
+        return a + b + c;
+      }
+      const nums = [10, 20, 30];
+      const result = add(...nums);
+      console.log(result);
+    */
+      /*
+      const num1 = [1, 2, 3];
+      const num2 = [4, 5, 6];
+      const newArr = num1.concat(num2);
+      console.log(newArr);
+    */
+      const dog = { name: "진돌이", age: 5, color: "brown" };
+      const newDog = {
+        ...dog,
+        owner: "kwon",
+      };
+      console.log(dog);
+      console.log(newDog);
+    </script>
+  </body>
+</html>
