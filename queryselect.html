@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="soo">안녕하세요</p>
+
+    <div>
+      <p class="soo">안녕하세요</p>
+
+      <p class="soo">안녕하세요</p>
+    </div>
+    <script>
+      /*
+      document.querySelector("div .soo").style.color = "red";*/
+      /*
+      let pList = document.querySelectorAll(".soo");
+      pList[0].style.color = "red";
+      pList[1].style.color = "blue";
+      pList[2].style.color = "green";*/
+      /*
+      let pList = document.querySelectorAll(".soo");
+      for (let i = 0; i < pList.length; i++) {
+        let item = pList[i];
+        item.style.color = "pink";
+        item.style.fontSize = "20px";
+      }*/
+      /*
+      let pList = document.querySelectorAll(".soo, #javascript");
+      for (let i = 0; i < pList.length; i++) {
+        let item = pList[i];
+        item.style.color = "blue";
+        item.style.fontSize = "20px";
+      }*/
+      let newDIV = document.createElement("div");
+
+      newDIV.innerHTML = "새로 생성된 DIV입니다.";
+
+      newDIV.setAttribute("id", "myDiv");
+      newDIV.style.backgroundColor = "yellow";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>innerHTML 실습</title>
+  </head>
+  <body>
+    <p id="clickableParagraph" onclick="changeContent()">
+      이번에는 어디로 여행을갈까요?
+    </p>
+
+    <script>
+      function changeContent() {
+        var currentContent =
+          document.getElementById("clickableParagraph").innerHTML;
+
+        var newContent = prompt("새로운 내용을 입력하세요:", currentContent);
+
+        if (newContent !== null && newContent !== currentContent) {
+          document.getElementById("clickableParagraph").innerHTML = newContent;
+        }
+      }
+    </script>
+  </body>
+</html>
