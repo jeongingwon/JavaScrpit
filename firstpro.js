@@ -1,5 +1,5 @@
 // OpenWeatherMap API 키
-const apiKey = "be07a991413f586a7caaa594269efead"; // 여러분의 API 키로 교체하세요
+const apiKey = "*"; // 여러분의 API 키로 교체하세요
 
 // 사용자의 위치를 기반으로 날씨 정보를 가져오는 함수
 function getWeatherInfo() {
